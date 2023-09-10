@@ -1,0 +1,21 @@
+Classes
+object
+Properties
+Methods (no static)
+$this
+constructor , destructor (magic)
+static
+
+
+mqsql prepare statement
+
+$stmt = $con->prepare("INSERT INTO people (name , money) VALUES (?,?)");
+
+$stmt->bind_param("si" , $name , $money);
+
+$name = "moh moh";
+$money = 200000;
+$stmt ->execute();
+
+
+print_r($con);
